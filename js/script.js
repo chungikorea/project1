@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-// *** Supabase 설정 정보 (환경변수에서 로드) ***
-const SUPABASE_URL = window.ENV_CONFIG?.SUPABASE_URL || '';
-const SUPABASE_ANON_KEY = window.ENV_CONFIG?.SUPABASE_ANON_KEY || '';
-
-if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-    console.error('환경변수가 설정되지 않았습니다. config.js 파일을 확인하세요.');
-}
+// *** Supabase 설정 정보 ***
+const SUPABASE_URL = 'https://crnkirlxwbfqbusxtpqh.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNybmtpcmx4d2JmcWJ1c3h0cHFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI1OTUyNDQsImV4cCI6MjA3ODE3MTI0NH0.p6iXMyN1-QqRm2ii00XfNbcl2CHuHYcYc9--47j30AQ';
 
 const TABLE_NAME = 'MEDICA_2025';
 const ITEMS_PER_PAGE = 10;
